@@ -93,18 +93,36 @@ public class DataTypesConcept {
 	    
 	    
 	    //****************************************************************************************************
-	    //7.char: it can only take 1 digit value:unicode values +ASCII values
+	    //7.char: it can only take 1 digit value:unicode values + ASCII values
 	    //size: 2 bytes = 16 bits
+	    //range: a-z 97 to 122
+	    //A-Z = 65 to 90
+	    //0-9 = 48 to 57
+	    
+	    
 	    char ch ='a';
 	    System.out.println(ch);
-	    char ch1 = '%';
+	    char ch1 = '$';
 	    System.out.println(ch1);
 	    
 	    char gender = 'M';
 	    System.out.println(gender);
 	    
-	    char ch2 = 123; //it will store cz it come from numeric family.
-	    System.out.println(ch2);
+	    
+	    System.out.println("value of ch1 is :" + ch1);
+	    System.out.println(ch+ch1+'0'+'A');//246// It will Print addition of ASCII values"
+	    
+	 
+	    
+	    //What is ASCII value of ch variable and star://two way of printing the ASCII value:
+	    System.out.println((byte)ch);//97 printing using type casting
+	    System.out.println(ch+0);//97 printing using addition of 0 and ch
+	    char star ='*';
+	    System.out.println((byte)star);
+	    
+	    
+	    System.out.println('a'+'c'+'0'+'9'+'A'+"hello"+'a'+'b');
+	    
 	    
 	    
 	    //****************************************************************************************************
